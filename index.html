@@ -1,39 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructura HTML</title>
-    <link href="./dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <div class="bg-rose-400 rounded-3xl p-7 max-w-30px h-max-40px ">
-      <div class="flex justify-start ">
-<img src="./public/Lavalier.png" class=" w-32 h-72  flex justify-start " alt="Logotype">
-        <header class="space-x-10">
-        <a href="" class="text-rose-700 hover:underline">Menu</a>
-        <a href="" class="text-rose-700 hover:underline">Productos</a>
-        <a href="" class="text-rose-700 hover:underline">Quienes somos</a>
-        <a href="" class="text-rose-700 hover:underline">Bijouterie</a>
-        </header>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lavalier</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-[url('/public/Background/Bg.jpg')] bg-cover bg-no-repeat h-screen">
+    <div class="flex items-center bg-white h-16 w-auto space-x-6 mx-4 px-4 rounded-md">
+        <!-- Imagen a la izquierda -->
+        <img class="h-10 w-32" src="./public/Lavalier black.jpg" alt="Logo">
+        
+        <!-- Navegación -->
+        <ul class="flex  justify-start space-x-4  Display text-xl">
+            <li><a href="/Mitologia" class="">Inicio</a></li>
+            <li><a href="/" class="hover:underline text-xl font-mono">Quienes somos</a></li>
+            <li><a href="/" class="hover:underline text-xl font-mono">bijouterie</a></li>
+            <li><a href="/" class="hover:underline text-xl font-mono">Información</a></li>
+        </ul>
     </div>
-    <main>
-        <main class="flex justify-between items-start mt-10">
-        </main>
 
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatibus ducimus necessitatibus, repellat dolorum, dolores provident eos unde ullam cumque sequi distinctio eum totam quaerat dolorem est magni. Facilis, magnam?</h1>
+    <br>
 
-
-    <footer class="bg-blue-200 mt-auto p-16 flex justify-between items-center">
-        <h1 class="text-left">
-            Copyright 2024
-        </h1>
-        <div class="flex justify-end">
-            <img src="./public/Social_Network_Logos/tiktok.svg" alt="TikTok Logo">
+    <!-- Sección para "Lavalier", la bola y "Jewelry" -->
+    <div class="flex justify-end items-center space-x-4 right-10 mx-4 ">
+        <h1 class="font-serif text-3xl">Lavalier</h1>
+        <div class="flex items-center space-x-2">
+            <img class="h-8 w-10 object-contain" src="./public/Bijouteries/Bola.png" alt="Pelota">
         </div>
-    </footer>
+    </div>
+    
+    
+    <div class="flex justify-start items-center mx-4 -mt-10">
+        <div class="relative bg-[url('/public/Background/Background.jpeg')] bg-cover bg-center h-[300px] w-[600px] rounded-md shadow-lg border-white border-2">
+            
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-between p-6 rounded-md">
+                
+                <div class="flex flex-col items-start justify-center text-left space-y-4">
+                    
+                    <h1 class="font-extralight text-2xl text-yellow-200">
+                        Hoxuny
+                    </h1>
+                    <p class="text-white font-Playfair Display text-lg font-medium">
+                        Lavalier presenta una selección única de bijouterie. Cada pieza está diseñada con pasión y detalle, para acompañarte en cada momento especial.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagen de Anillo al borde derecho -->
+        <div class="absolute right-0 top-[20%]  p-4 rounded-md bg-slate-200 mr-16">
+            <img class="h-28 w-32 object-cover rounded-md" src="./public/Bijouteries/Anillo.png" alt="Anillo">
+        </div>
+    </div>
+    <div class="bg-[url('/public/Background/Background2.jpg')] w-full h-64 space-x-24 bg-cover bg-center h-auto rounded-lg shadow-lg border-white border-2 mt-10 p-2 mb-6">
+        <div class="relative flex items-center space-x-10 mt-7">
+
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya1.png" alt="Jewelry Box 1">
+            
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya2.png" alt="Jewelry Box 2">
+            
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya3.png" alt="Jewelry Box 3">
+            
+            <img class="h-full w-auto ml-5" src="./public/Bijouteries/caja_de_anillo.png">
+    
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya4.png">
+    
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya5.png">
+        
+            <img class="h-48 w-44 object-cover transform rotate-30 justify-start border-4 border-yellow-100 rounded-lg shadow-lg bg-white ml-10" src="./public/Bijouteries/Joya6.png">
+        </div>
+    </div>
+    
+    <div class="w-full flex flex-col bg-orange-300 p-6 space-y-6">
+        
+        <div class="flex justify-between items-start">
+            
+            <footer class="text-white mt-14">
+                <p>© 2025 Lavalier</p>
+                <p>WhatsApp: 1133149388</p>
+                <p>Email: sarayamilagimenez99@gmail.com</p>
+            </footer>
+            
+            <ul class="text-2xl font-serif text-white">
+                <h2 class="font-bold mb-2 text-2xl">¿Quiénes somos?</h2>
+                <li><a href="/about" class="hover:underline text-xl">Historia</a></li>
+                <li><a href="/team" class="hover:underline text-xl">Nuestro equipo</a></li>
+                <li><a href="/mission" class="hover:underline text-xl">Misión y visión</a></li>
+            </ul>
+    
+            <ul class="text-2xl font-serif text-white justify-center ml-24">
+                <h2 class="font-bold mb-2 text-2xl">Proyectos</h2>
+                <li><a href="/Mitologias" class="hover:underline text-xl">Mitologías</a></li>
+                <li><a href="/PDFhiru" class="hover:underline text-xl">PDFhiru</a></li>
+                <li><a href="/Backend" class="hover:underline text-xl">Backend</a></li>
+            </ul>
+            
+        <div class="flex justify-end space-x-4">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="instagram">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="tiktok">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="twitter">
+            <img class="h-10 w-12 mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="Whattsap">
+        </div>
+    </div>
+    
 </body>
 </html>
