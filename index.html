@@ -8,17 +8,27 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 <body class="bg-[url('/public/Background/Bg.jpg')] bg-cover bg-no-repeat h-screen">
-    <div class="flex items-center bg-white h-16 w-auto space-x-6 mx-4 px-4 rounded-md">
+    <div class="flex items-center justify-between bg-white h-16 w-auto mx-4 px-4 rounded-md">
         <!-- Imagen a la izquierda -->
         <img class="h-10 w-32" src="./public/Lavalier black.jpg" alt="Logo">
         
         <!-- Navegación -->
-        <ul class="flex  justify-start space-x-4  Display text-xl">
-            <li><a href="/Mitologia" class="">Inicio</a></li>
-            <li><a href="/" class="hover:underline text-xl font-mono">Quienes somos</a></li>
-            <li><a href="/" class="hover:underline text-xl font-mono">bijouterie</a></li>
-            <li><a href="/" class="hover:underline text-xl font-mono">Información</a></li>
+        <ul class="flex justify-start space-x-4 text-xl">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
+            <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
+            <li><a href="/" class="hover:underline font-mono">Información</a></li>
         </ul>
+    
+        <!-- Contenedor para las imágenes de pago alineadas a la derecha -->
+        <div class="flex space-x-4 ml-auto">
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-16 w-9" alt="MercadoLibre">
+            </a>
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-16 w-9" alt="PayPal">
+            </a>
+        </div>
     </div>
 
     <br>
