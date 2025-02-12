@@ -7,13 +7,13 @@
         <link href="./dist/output.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-<body class="bg-[url('/public/Background/Bg.jpg')] bg-cover bg-no-repeat h-screen">
+<body class="bg-cover bg-no-repeat h-screen md:bg-[url('/public/Background/Bg.jpg')]">
     <div class="flex items-center justify-between bg-white h-16 w-auto mx-4 px-4 rounded-md">
         <!-- Imagen a la izquierda -->
-        <img class="h-10 w-32" src="./public/Lavalier black.jpg" alt="Logo">
+        <img class="md:h-80 md:w-56 md:mr-10 md:mt-36" src="./public/Lavalier_Black.png" alt="Logo">
         
         <!-- Navegación -->
-        <ul class="flex justify-start space-x-4 text-xl">
+        <ul class="space-x-4 text-xl md:flex justify-start">
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
             <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
@@ -21,28 +21,27 @@
         </ul>
     
         <!-- Contenedor para las imágenes de pago alineadas a la derecha -->
-        <div class="flex space-x-4 ml-auto">
+        <div class="md:flex space-x-4 ml-auto">
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-16 w-9" alt="MercadoLibre">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="md:h-16 md:w-9" alt="MercadoLibre">
             </a>
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-16 w-9" alt="PayPal">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="md:h-16 md:w-9" alt="PayPal">
             </a>
         </div>
     </div>
-
+    
     <br>
 
     <!-- Sección para "Lavalier", la bola y "Jewelry" -->
-    <div class="flex justify-end items-center space-x-4 right-10 mx-4 ">
+    <div class="flex justify-end items-center space-x-4 md:right-10 mx-4 ">
         <h1 class="font-serif text-3xl">Lavalier</h1>
         <div class="flex items-center space-x-2">
             <img class="h-8 w-10 object-contain" src="./public/Bijouteries/Bola.png" alt="Pelota">
         </div>
     </div>
     
-    
-    <div class="flex justify-start items-center mx-4 -mt-10">
+    <div class="flex justify-start items-center mx-4 md:-mt-10">
         <div class="relative bg-[url('/public/Background/Background.jpeg')] bg-cover bg-center h-[300px] w-[600px] rounded-md shadow-lg border-white border-2">
             
             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-between p-6 rounded-md">
@@ -60,10 +59,11 @@
         </div>
 
         <!-- Imagen de Anillo al borde derecho -->
-        <div class="absolute right-0 top-[20%]  p-4 rounded-md bg-slate-200 mr-16">
+        <div class="absolute right-0 top-[20%] p-4 rounded-md bg-slate-200 mr-16">
             <img class="h-28 w-32 object-cover rounded-md" src="./public/Bijouteries/Anillo.png" alt="Anillo">
         </div>
     </div>
+
     <div class="bg-[url('/public/Background/Background2.jpg')] w-full h-64 space-x-24 bg-cover bg-center h-auto rounded-lg shadow-lg border-white border-2 mt-10 p-2 mb-6">
         <div class="relative flex items-center space-x-10 mt-7">
 
@@ -114,6 +114,5 @@
             <img class="h-10 w-12 mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="Whattsap">
         </div>
     </div>
-    
 </body>
 </html>

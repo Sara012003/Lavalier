@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavalier</title>
-    <link href="./dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="md: bg-[url('/public/Background/Bg.jpg')] bg-cover bg-no-repeat h-full">
-    <!-- Navbar -->
-    <div class="flex items-center justify-between bg-white h-16 w-auto mx-4 px-4 rounded-md">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lavalier</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-cover bg-no-repeat h-screen md:bg-[url('/public/Background/Bg.jpg')]">
+    <div class="flex items-center justify-between bg-white h-16 w-auto mx-4 px-4 rounded-md md:flex-row">
         <!-- Imagen a la izquierda -->
-        <img class="h-10 w-32" src="./public/Lavalier black.jpg" alt="Logo">
+        <img class="h-16 w-16 md:h-80 md:w-56 md:mr-10 md:mt-36" src="./public/Lavalier_Black.png" alt="Logo">
         
         <!-- Navegación -->
-        <ul class="flex justify-start space-x-4 text-xl">
+        <ul class="flex justify-between space-x-4 text-xl md:flex md:justify-start">
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
             <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
             <li><a href="/" class="hover:underline font-mono">Información</a></li>
         </ul>
-    
-    
+
         <!-- Contenedor para las imágenes de pago alineadas a la derecha -->
-        <div class="flex space-x-4 ml-auto">
+        <div class="flex space-x-4 ml-auto md:flex md:ml-auto">
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-16 w-9" alt="MercadoLibre">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-8 w-8 md:h-16 md:w-9" alt="MercadoLibre">
             </a>
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-16 w-9" alt="PayPal">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-8 w-8 md:h-16 md:w-9" alt="PayPal">
             </a>
         </div>
     </div>
 
-    <main class="p-6">
-        <!-- Contenedor de productos en grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <br>
+
+    <main class="p-6 md:p-6">
+        <!-- Contenedor de productos en fila -->
+        <div class="flex flex-wrap justify-center gap-4 md:flex md:flex-wrap">
             <!-- Producto 1 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
                      src="/public/Products/ArosDeAcero.png" alt="Aros de Acero">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                     Aros de Acero - $5000
                 </span>
             </div>
-
+    
             <!-- Producto 2 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
                      src="/public/Products/BolsasDoradas.png" alt="Bolsas Doradas">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                     Bolsas Doradas Medianas - $3000
@@ -55,75 +55,85 @@
             </div>
 
             <!-- Producto 3 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/BolsasDoradas.png" alt="Bolsas Doradas Grandes">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/CollarDeAcero.png" alt="Collar de Acero">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Bolsas Doradas Grandes - $4000
+                    Dije de acero 1 - $3500
                 </span>
             </div>
 
             <!-- Producto 4 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/BolsasDoradas.png" alt="Bolsas Doradas Chicas">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/DijeDeAceroUno.png" alt="Collar Dorado">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Bolsas Doradas Chicas - $100
+                    Dije de acero 2 - $2000
                 </span>
             </div>
 
             <!-- Producto 5 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/DijeDeAceroUno.png" alt="Dije de Acero 1">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/DijeDeAceroDos.png" alt="Carrito de Plata">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Dije de Acero 1 - $2000
+                    Dije de acero 3 - $1500
                 </span>
             </div>
 
             <!-- Producto 6 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/DijeDeAceroDos.png" alt="Dije de Acero 2">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/DijeDeAceroTres.png" alt="Lentes de Sol">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Dije de Acero 2 - $2500
+                    Dije de acero 4 - $2500
                 </span>
             </div>
 
             <!-- Producto 7 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/DijeDeAceroTres.png" alt="Dije de Acero 3">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/DijeDeAceroCuatro.png" alt="Set de Anillos">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Dije de Acero 3 - $3000
+                    Dije de acero 5 - $4500
                 </span>
             </div>
 
             <!-- Producto 8 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/DijeDeAceroCuatro.png" alt="Dije de Acero 4">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/DijeDeAceroCinco.png" alt="Pinza de Plata">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Dije de Acero 4 - $3500
+                    Dije de acero 6- $2800
                 </span>
             </div>
 
             <!-- Producto 9 -->
-            <div class="relative group">
-                <img class="h-72 w-64 bg-gray-200 transition-transform transform group-hover:scale-105" 
-                     src="/public/Products/DijeDeAceroCinco.png" alt="Dije de Acero 5">
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/BolsasOrganza.png" alt="Espejo Dorado">
                 <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                    Dije de Acero 5 - $4000
+                    Bolsa Organza - $3200
+                </span>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="relative group md:w-64">
+                <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                     src="public/Products/BolsasDoradas.png" alt="Brazalete de Oro">
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                    Bolsa Dorada Grande - $6000
                 </span>
             </div>
         </div>
     </main>
 
-    <div class=" md:w-full flex flex-col bg-orange-300 p-6 space-y-6">
+  
+    <div class="w-full flex flex-col bg-orange-300 p-6 space-y-6">
         
-        <div class=" md:flex justify-between items-start">
+        <div class="flex justify-between items-start">
             
-            <footer class="md: text-white mt-14">
+            <footer class="text-white mt-14">
                 <p>© 2025 Lavalier</p>
                 <p>WhatsApp: 1133149388</p>
                 <p>Email: sarayamilagimenez99@gmail.com</p>
@@ -143,11 +153,11 @@
                 <li><a href="/Backend" class="hover:underline text-xl">Backend</a></li>
             </ul>
             
-        <div class=" md:flex justify-end space-x-4">
-            <img class="md:h-10 w-12 mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="instagram">
-            <img class="md:h-10 w-12 mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="tiktok">
-            <img class="md: h-10 w-12 mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="twitter">
-            <img class="md: h-10 w-12 mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="Whattsap">
+        <div class="flex justify-end space-x-4">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="instagram">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="tiktok">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="twitter">
+            <img class="h-10 w-12 mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="Whattsap">
         </div>
     </div>
 </body>

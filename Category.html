@@ -1,36 +1,153 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lavalier</title>
-        <link href="./dist/output.css" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-<body class="bg-[url('/public/Background/Bg.jpg')] bg-cover bg-no-repeat h-screen">
-    <div class="flex items-center justify-between bg-white h-16 w-auto mx-4 px-4 rounded-md">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavalier</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-cover bg-no-repeat h-screen bg-[url('/public/Background/Bg.jpg')]">
+    <div class="flex items-center justify-between bg-white h-16 w-full md:w-auto mx-4 px-4 rounded-md">
         <!-- Imagen a la izquierda -->
-        <img class="h-10 w-32" src="./public/Lavalier black.jpg" alt="Logo">
+        <img class="md:h-80 md:w-56 md:mr-10 md:mt-36" src="./public/Lavalier_Black.png" alt="Logo">
         
         <!-- Navegación -->
-        <ul class="flex justify-start space-x-4 text-xl">
+        <ul class="hidden md:flex justify-start space-x-4 text-xl">
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
             <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
             <li><a href="/" class="hover:underline font-mono">Información</a></li>
         </ul>
     
-    
         <!-- Contenedor para las imágenes de pago alineadas a la derecha -->
         <div class="flex space-x-4 ml-auto">
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class=" h-16 w-9" alt="MercadoLibre">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="md:h-16 md:w-9" alt="MercadoLibre">
             </a>
             <a href="#">
-                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-16 w-9" alt="PayPal">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="md:h-16 md:w-9" alt="PayPal">
             </a>
         </div>
     </div>
+
+    <main class="md:p-6">
+        <h1 class="text-center text-2xl font-semibold">Categorías</h1>
+        <br>
+
+        <!-- Contenedor de categorías en fila -->
+        <div class="md:flex flex-wrap justify-center gap-6">
+            <!-- Producto 1 -->
+            <div class="md:relative group">
+                <a href="Hoops.html">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                         src="public/Products/Category/Aros.jpg" alt="Aros de Acero">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Aros
+                </span>
+            </div>
     
+            <!-- Producto 2 -->
+            <div class="md:relative group">
+                <a href="Necklace.html">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                         src="public/Products/Category/Collares.webp" alt="Collares de Acero">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Collares
+                </span>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="md:relative group">
+                <a href="Charms.html">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl"
+                         src="public/Products/Category/Dijes.webp" alt="Bolsas Doradas">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Dijes
+                </span>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="md:relative group">
+                <a href="Cloths.html">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                         src="public/Products/Category/Paños.jpg" alt="Dije de Acero">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Paños
+                </span>
+            </div>
+
+
+            <div class="md:relative group">
+                <a href="Pages_of_Bag.html">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                         src="public/Products/Bags/BolsoCinco.webp" alt="Dije de Acero">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Bolsos
+                </span>
+            </div>
+
+
+            
+        </div>
+
+        <br>
+
+        <!-- Sección de Mejores Productos -->
+        <h1 class="md:text-center text-2xl font-medium mt-6">Mejores Productos</h1>
+        <br>
+
+        <!-- Contenedor de mejores productos en fila -->
+        <div class="md:flex flex-wrap justify-center gap-6 font-bold">
+            <div class="md:relative group">
+                <a href="#">
+                    <img class="md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                         src="public/Products/BestProducts/Bolso.jpeg" alt="Dije de Acero">
+                </a>
+                <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                    Bolso 1
+                </span>
+            </div>
+            <!-- Puedes agregar más productos aquí -->
+        </div>
+    </main>
+
+      
+    <div class="w-full flex flex-col bg-orange-300 p-6 space-y-6">
+        
+        <div class="flex justify-between items-start">
+            
+            <footer class="text-white mt-14">
+                <p>© 2025 Lavalier</p>
+                <p>WhatsApp: 1133149388</p>
+                <p>Email: sarayamilagimenez99@gmail.com</p>
+            </footer>
+            
+            <ul class="text-2xl font-serif text-white">
+                <h2 class="font-bold mb-2 text-2xl">¿Quiénes somos?</h2>
+                <li><a href="/about" class="hover:underline text-xl">Historia</a></li>
+                <li><a href="/team" class="hover:underline text-xl">Nuestro equipo</a></li>
+                <li><a href="/mission" class="hover:underline text-xl">Misión y visión</a></li>
+            </ul>
+    
+            <ul class="text-2xl font-serif text-white justify-center ml-24">
+                <h2 class="font-bold mb-2 text-2xl">Proyectos</h2>
+                <li><a href="/Mitologias" class="hover:underline text-xl">Mitologías</a></li>
+                <li><a href="/PDFhiru" class="hover:underline text-xl">PDFhiru</a></li>
+                <li><a href="/Backend" class="hover:underline text-xl">Backend</a></li>
+            </ul>
+            
+        <div class="flex justify-end space-x-4">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="instagram">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="tiktok">
+            <img class="h-10 w-12 mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="twitter">
+            <img class="h-10 w-12 mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="Whattsap">
+        </div>
+    </div>
+</body>
 </html>
