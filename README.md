@@ -25,3 +25,12 @@ Install the project dependencies.
 Then, run:
 
 3)npm run dev
+
+
+
+## 🛠 Technologies used  
+- **HTML5** → Site structure  
+- **CSS3** → Styles and layout  
+- **JavaScript** → Interactivity and dynamic functions  
+- **Tailwind CSS** → Style Framework  
+- **Node.js** → Backend (if applicable)
