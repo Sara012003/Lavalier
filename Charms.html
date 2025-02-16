@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavalier</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./dist/output.css" rel="stylesheet">
-</head>
-<body class="bg-cover bg-no-repeat bg-center min-h-screen w-full bg-[url('/public/Background/Bg.jpg')]">
-    <nav class="bg-white h-16 w-full px-4 shadow-md flex items-center justify-between md:px-8">
-    <!-- Logo -->
-    <img class="h-12 w-12 md:h-40 md:w-36 md:mt-20" src="./public/Lavalier_Black.png" alt="Logo">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lavalier</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-cover bg-no-repeat bg-center min-h-screen w-full bg-[url('/public/Background/Bg.jpg')]">
+        <nav class="bg-white h-16 w-full px-4 shadow-md flex items-center justify-between md:px-8">
+        <!-- Logo -->
+         <a href="index.html">
+        <img class="h-48 w-44 md:h-40 md:w-36 md:mt-20" src="./public/Lavalier_Black.png" alt="Logo">
+         </a>
+    
+        <!-- Menú de escritorio -->
+        <ul class="hidden md:flex space-x-6 text-xl">
+            <li><a href="/index.html">Index</a></li>
+            <li><a href="/Products.html" class="hover:underline font-mono">Products</a></li>
+            <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
+            <li><a href="/Question.html" class="hover:underline font-mono">FAQ</a></li>
 
-    <!-- Menú de escritorio -->
-    <ul class="hidden md:flex space-x-6 text-xl">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
-        <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
-        <li><a href="/" class="hover:underline font-mono">Información</a></li>
-    </ul>
-
-    <!-- Iconos de pago -->
-    <div class="hidden md:flex space-x-4">
-        <a href="#">
-            <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="MercadoLibre">
-        </a>
-        <a href="#">
-            <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="PayPal">
-        </a>
+            
+        </ul>
+    
+        <!-- Iconos de pago -->
+        <div class="hidden md:flex space-x-4">
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="MercadoLibre">
+            </a>
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="PayPal">
+            </a>
+        </div>
+    
+        <!-- Botón menú móvil -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-gray-800 bg-opacity-90 z-50 hidden flex flex-col items-center space-y-4 text-white text-lg py-4 transition-transform transform -translate-y-full">
+        <a href="/index.html" class="hover:underline">index</a>
+        <a href="/Products.html" class="hover:underline">Products</a>
+        <a href="/Category.html" class="hover:underline">Bijouterie</a>
+        <a href="/Question.html" class="hover:underline">FAQ</a>
     </div>
-
-    <!-- Botón menú móvil -->
-    <button id="menu-toggle" class="md:hidden focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
-</nav>
-
-<!-- Menú móvil -->
-<div id="mobile-menu" class="fixed top-16 left-0 w-full bg-gray-800 bg-opacity-90 z-50 hidden flex flex-col items-center space-y-4 text-white text-lg py-4 transition-transform transform -translate-y-full">
-    <a href="/index.html" class="hover:underline">Inicio</a>
-    <a href="/Products.html" class="hover:underline">Productos</a>
-    <a href="/Category.html" class="hover:underline">Bijouterie</a>
-    <a href="/" class="hover:underline">Información</a>
-</div>
 
 <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
@@ -55,158 +59,159 @@
     });
 </script>
 
+
 <br>
 
     <div class="flex flex-wrap justify-center gap-6">
         <!-- Productos -->
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/DIje1.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm1.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije2.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm2.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/DIje3.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm3.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije4.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm4.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
-
-        </div>
-
-
-        <div class="relative group">
-            <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije5.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
-            </span>
-
-            <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije6.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
-            </span>
+                 src="public/Products/Charms/Charm5.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms           
+             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije7.webp" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm6.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/DIje8.webp" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm7.webp" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije9.webp" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm8.webp" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije10.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm9.webp" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
-
-        </div>
-
-        <div class="relative group">
-            <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije11.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
-            </span>
-
-            <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Charms/Dije12.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Charms/Charm10.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
+
+        </div>
+
+        <div class="relative group">
+            <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                 src="public/Products/Charms/Charm11.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
+            </span>
+
+            <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
+
+        </div>
+
+
+        <div class="relative group">
+            <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
+                 src="public/Products/Charms/Charm12.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Charms
+            </span>
+
+            <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
+                Charms - <span class="text-yellow-300 font-bold">$5000</span>
                 
         </div>
 
@@ -216,27 +221,29 @@
     <br>
 
    
+   <!-- Footer -->
+
+   <footer class="text-white text-center md:text-left mt-14">
+
     <div class="flex flex-col bg-orange-300 p-6 space-y-6 md:w-full">
     
         <!-- Contenedor Principal -->
         <div class="flex flex-col items-center md:flex-row md:justify-between md:items-start">
             
-            <!-- Footer -->
-            <footer class="text-white text-center md:text-left mt-14">
+            
                 <p>© 2025 Lavalier</p>
                 <p>WhatsApp: 1133149388</p>
                 <p>Email: sarayamilagimenez99@gmail.com</p>
-            </footer>
 
     
             <!-- Sección "¿Quiénes somos?" -->
             <div class="text-center md:text-left">
                 <br>
-                <h2 class="font-bold mb-2 text-2xl text-white">¿Quiénes somos?</h2>
+                <h2 class="font-bold mb-2 text-2xl text-white">¿who we are?</h2>
                 <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
-                    <li><a href="/about" class="hover:underline">Historia</a></li>
-                    <li><a href="/team" class="hover:underline">Nuestro equipo</a></li>
-                    <li><a href="/mission" class="hover:underline">Misión y visión</a></li>
+                    <li><a href="/about" class="hover:underline">History</a></li>
+                    <li><a href="/team" class="hover:underline">Our team</a></li>
+                    <li><a href="/mission" class="hover:underline">Mission and vision</a></li>
                 </ul>
             </div>
     
@@ -244,11 +251,11 @@
             <!-- Sección "Proyectos" -->
             <div class="text-center md:text-left md:ml-24">
                 <br>
-                <h2 class="font-bold mb-2 text-2xl text-white">Proyectos</h2>
+                <h2 class="font-bold mb-2 text-2xl text-white">Projects</h2>
                 <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
-                    <li><a href="/Mitologias" class="hover:underline">Mitologías</a></li>
-                    <li><a href="/PDFhiru" class="hover:underline">PDFhiru</a></li>
-                    <li><a href="/Backend" class="hover:underline">Backend</a></li>
+                    <li><a href="https://github.com/Sara012003/ForoVersionBeta/tree/upkeep/Tailwind-CSS-Style-Forum" class="hover:underline">Mythologies</a></li>
+                    <li><a href="https://github.com/imitelis/pdfhiru" class="hover:underline">PDFhiru</a></li>
+                    <li><a href="https://github.com/Sara012003/Coding_Challenge" class="hover:underline">Backend</a></li>
                 </ul>
             </div>
     
@@ -264,4 +271,6 @@
     
         </div>
     </div>
+</footer>
+</body>
     

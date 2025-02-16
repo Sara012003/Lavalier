@@ -10,14 +10,18 @@
     <body class="bg-cover bg-no-repeat bg-center min-h-screen w-full bg-[url('/public/Background/Bg.jpg')]">
         <nav class="bg-white h-16 w-full px-4 shadow-md flex items-center justify-between md:px-8">
         <!-- Logo -->
-        <img class="h-12 w-12 md:h-40 md:w-36 md:mt-20" src="./public/Lavalier_Black.png" alt="Logo">
+         <a href="index.html">
+        <img class="h-48 w-44 md:h-40 md:w-36 md:mt-20" src="./public/Lavalier_Black.png" alt="Logo">
+         </a>
     
         <!-- Menú de escritorio -->
         <ul class="hidden md:flex space-x-6 text-xl">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
+            <li><a href="/index.html">Index</a></li>
+            <li><a href="/Products.html" class="hover:underline font-mono">Products</a></li>
             <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
-            <li><a href="/" class="hover:underline font-mono">Información</a></li>
+            <li><a href="/Question.html" class="hover:underline font-mono">FAQ</a></li>
+
+            
         </ul>
     
         <!-- Iconos de pago -->
@@ -40,10 +44,10 @@
     
     <!-- Menú móvil -->
     <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-gray-800 bg-opacity-90 z-50 hidden flex flex-col items-center space-y-4 text-white text-lg py-4 transition-transform transform -translate-y-full">
-        <a href="/index.html" class="hover:underline">Inicio</a>
-        <a href="/Products.html" class="hover:underline">Productos</a>
+        <a href="/index.html" class="hover:underline">index</a>
+        <a href="/Products.html" class="hover:underline">Products</a>
         <a href="/Category.html" class="hover:underline">Bijouterie</a>
-        <a href="/" class="hover:underline">Información</a>
+        <a href="/Question.html" class="hover:underline">FAQ</a>
     </div>
     
     <script>
@@ -55,6 +59,7 @@
         });
     </script>
     
+    
     <br>
     <main>
     
@@ -62,132 +67,136 @@
             <!-- Productos -->
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aro1.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops1.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block  absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $1500
             </span>
             
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops  - <span class="text-yellow-300 font-bold">$1500</span>
 
         </div>
         
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aro2.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops2.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $2500
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops  - <span class="text-yellow-300 font-bold">$2500</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aro3.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops3.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $4000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$4000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros4.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops4.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $1000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$1000</span>
 
         </div>
 
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros5.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops5.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $5500
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$5500</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros6.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops6.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $5000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$5000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros8.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops7.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $8000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$8000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros9.jpg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops9.jpg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $5200
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$5200</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros10.webp" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops10.webp" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $5200
             </span>
+
+            <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
+                Hoops - <span class="text-yellow-300 font-bold">$5200</span>
+                
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros11.jpeg" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops11.jpeg" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $10000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$10000</span>
 
         </div>
 
         <div class="relative group">
             <img class="h-44 w-40 md:h-72 md:w-64 bg-gray-200 transition-transform transform group-hover:scale-105 rounded-2xl" 
-                 src="public/Products/Hoops/Aros12.webp" alt="Aros de Acero">
-            <span class="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
-                Aros
+                 src="public/Products/Hoops/Hoops12.webp" alt="Aros de Acero">
+            <span class="hidden md:block absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded-md text-sm opacity-0 group-hover:opacity-100 transition-opacity font-medium">
+                Hoops $2000
             </span>
 
             <span class="absolute bottom-0 left-0 right-0 bg-black/50 text-white px-3 py-2 text-center text-sm rounded-b-lg md:hidden">
-                Aros de Acero - <span class="text-yellow-300 font-bold">$5000</span>
+                Hoops - <span class="text-yellow-300 font-bold">$2000</span>
 
         </div>
 
@@ -197,52 +206,55 @@
     
 </main>
      
-    <div class="flex flex-col bg-orange-300 p-6 space-y-6 md:w-full">
-    
-        <!-- Contenedor Principal -->
-        <div class="flex flex-col items-center md:flex-row md:justify-between md:items-start">
-            
-            <!-- Footer -->
-            <footer class="text-white text-center md:text-left mt-14">
-                <p>© 2025 Lavalier</p>
-                <p>WhatsApp: 1133149388</p>
-                <p>Email: sarayamilagimenez99@gmail.com</p>
-            </footer>
+    <!-- Footer -->
 
-    
-            <!-- Sección "¿Quiénes somos?" -->
-            <div class="text-center md:text-left">
-                <br>
-                <h2 class="font-bold mb-2 text-2xl text-white">¿Quiénes somos?</h2>
-                <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
-                    <li><a href="/about" class="hover:underline">Historia</a></li>
-                    <li><a href="/team" class="hover:underline">Nuestro equipo</a></li>
-                    <li><a href="/mission" class="hover:underline">Misión y visión</a></li>
-                </ul>
-            </div>
-    
+    <footer class="text-white text-center md:text-left mt-14">
 
-            <!-- Sección "Proyectos" -->
-            <div class="text-center md:text-left md:ml-24">
-                <br>
-                <h2 class="font-bold mb-2 text-2xl text-white">Proyectos</h2>
-                <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
-                    <li><a href="/Mitologias" class="hover:underline">Mitologías</a></li>
-                    <li><a href="/PDFhiru" class="hover:underline">PDFhiru</a></li>
-                    <li><a href="/Backend" class="hover:underline">Backend</a></li>
-                </ul>
-            </div>
+        <div class="flex flex-col bg-orange-300 p-6 space-y-6 md:w-full">
+        
+            <!-- Contenedor Principal -->
+            <div class="flex flex-col items-center md:flex-row md:justify-between md:items-start">
+                
+                
+                    <p>© 2025 Lavalier</p>
+                    <p>WhatsApp: 1133149388</p>
+                    <p>Email: sarayamilagimenez99@gmail.com</p>
     
-            
-            <!-- Redes Sociales -->
-            <div class="flex justify-center gap-4 md:justify-end space-x-4">
-                <br>
-                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="Instagram">
-                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="TikTok">
-                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="Twitter">
-                <img class="h-10 w-12 mt-6 md:mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="WhatsApp">
-            </div>
+        
+                <!-- Sección "¿Quiénes somos?" -->
+                <div class="text-center md:text-left">
+                    <br>
+                    <h2 class="font-bold mb-2 text-2xl text-white">¿who we are?</h2>
+                    <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
+                        <li><a href="/about" class="hover:underline">History</a></li>
+                        <li><a href="/team" class="hover:underline">Our team</a></li>
+                        <li><a href="/mission" class="hover:underline">Mission and vision</a></li>
+                    </ul>
+                </div>
+        
     
+                <!-- Sección "Proyectos" -->
+                <div class="text-center md:text-left md:ml-24">
+                    <br>
+                    <h2 class="font-bold mb-2 text-2xl text-white">Projects</h2>
+                    <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
+                        <li><a href="https://github.com/Sara012003/ForoVersionBeta/tree/upkeep/Tailwind-CSS-Style-Forum" class="hover:underline">Mythologies</a></li>
+                        <li><a href="https://github.com/imitelis/pdfhiru" class="hover:underline">PDFhiru</a></li>
+                        <li><a href="https://github.com/Sara012003/Coding_Challenge" class="hover:underline">Backend</a></li>
+                    </ul>
+                </div>
+        
+                
+                <!-- Redes Sociales -->
+                <div class="flex justify-center gap-4 md:justify-end space-x-4">
+                    <br>
+                    <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="Instagram">
+                    <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="TikTok">
+                    <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="Twitter">
+                    <img class="h-10 w-12 mt-6 md:mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="WhatsApp">
+                </div>
+        
+            </div>
         </div>
-    </div>
-    
+    </footer>
+    </body>

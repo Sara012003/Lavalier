@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lavalier</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-cover bg-no-repeat bg-center min-h-screen w-full bg-[url('/public/Background/Bg.jpg')]">
+        <nav class="bg-white h-16 w-full px-4 shadow-md flex items-center justify-between md:px-8">
+        <!-- Logo -->
+         <a href="index.html">
+        <img class="h-12 w-12 md:h-40 md:w-36 md:mt-20" src="./public/Lavalier_Black.png" alt="Logo">
+         </a>
+    
+        <!-- Menú de escritorio -->
+        <ul class="hidden md:flex space-x-6 text-xl">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/Products.html" class="hover:underline font-mono">Productos</a></li>
+            <li><a href="/Category.html" class="hover:underline font-mono">Bijouterie</a></li>
+            <li><a href="/Question.html" class="hover:underline font-mono">Preguntas frecuentes</a></li>
+
+            
+        </ul>
+    
+        <!-- Iconos de pago -->
+        <div class="hidden md:flex space-x-4">
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/mercadolibre-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="MercadoLibre">
+            </a>
+            <a href="#">
+                <img src="/public/Social_Network_Logos/Logotypes_Cashing/paypal-svgrepo-com.svg" class="h-8 w-8 md:h-12 md:w-12" alt="PayPal">
+            </a>
+        </div>
+    
+        <!-- Botón menú móvil -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="fixed top-16 left-0 w-full bg-gray-800 bg-opacity-90 z-50 hidden flex flex-col items-center space-y-4 text-white text-lg py-4 transition-transform transform -translate-y-full">
+        <a href="/index.html" class="hover:underline">Inicio</a>
+        <a href="/Products.html" class="hover:underline">Productos</a>
+        <a href="/Category.html" class="hover:underline">Bijouterie</a>
+        <a href="/Question.html" class="hover:underline">Preguntas frecuentes</a>
+    </div>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            let menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('-translate-y-full');
+            menu.classList.toggle('translate-y-0');
+        });
+    </script>
+
+    <br>
+
+<main class="py-12 bg-gray-200">
+    <div class="max-w-4xl mx-auto px-6">
+        <h1 class="text-3xl font-semibold text-center text-gray-800 mb-8">Preguntas Frecuentes</h1>
+
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Cómo puedo realizar un pedido?</h2>
+                <p class="text-gray-600 mt-2">Puedes realizar un pedido a través de nuestro sitio web. Simplemente selecciona los productos que deseas, añádelos a tu carrito de compras, y procede al pago con las opciones disponibles.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Cuáles son las opciones de pago?</h2>
+                <p class="text-gray-600 mt-2">Aceptamos pagos mediante tarjeta de crédito, PayPal y transferencias bancarias. También ofrecemos opciones de pago a través de MercadoLibre y otros métodos disponibles en nuestra página.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿En qué países realizan envíos?</h2>
+                <p class="text-gray-600 mt-2">Actualmente realizamos envíos a toda Argentina. Para envíos internacionales, por favor, contáctanos directamente para obtener más información.</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Cuánto tarda el envío?</h2>
+                <p class="text-gray-600 mt-2">El tiempo de entrega varía según la ubicación, pero generalmente el envío puede tardar entre 3 y 7 días hábiles dentro de Argentina. Los envíos internacionales pueden tardar más, dependiendo del destino.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700"> ¿Puedo devolver un producto?</h2>
+                <p class="text-gray-600 mt-2">Sí, ofrecemos una política de devoluciones dentro de los 15 días posteriores a la compra, siempre y cuando el producto no haya sido usado y se encuentre en su estado original. Consulta nuestras políticas de devolución para más detalles.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Los productos son de calidad?</h2>
+                <p class="text-gray-600 mt-2">Todos nuestros productos están hechos con materiales de alta calidad, cuidadosamente seleccionados para garantizar su durabilidad y belleza. Ofrecemos una garantía limitada para asegurar la satisfacción de nuestros clientes.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Cómo puedo saber mi talla?</h2>
+                <p class="text-gray-600 mt-2">En cada producto, proporcionamos una guía de tallas que te ayudará a elegir el tamaño correcto. Si tienes alguna duda, no dudes en contactarnos y te asistiremos encantados.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Ofrecen descuentos o promociones?</h2>
+                <p class="text-gray-600 mt-2">Sí, regularmente ofrecemos descuentos y promociones especiales. Puedes suscribirte a nuestro boletín de noticias para estar al tanto de las últimas ofertas.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Puedo personalizar un producto?</h2>
+                <p class="text-gray-600 mt-2">¡Sí! Ofrecemos opciones de personalización para algunos productos. Si estás interesado en personalizar un artículo, por favor, contáctanos para más detalles.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Qué hago si mi producto llega dañado o defectuoso?</h2>
+                <p class="text-gray-600 mt-2">Lamentamos cualquier inconveniente. Si tu producto llega dañado o defectuoso, por favor, contáctanos de inmediato para organizar una devolución o reemplazo.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Puedo cambiar mi pedido una vez realizado?</h2>
+                <p class="text-gray-600 mt-2">Si necesitas cambiar algo de tu pedido, por favor, comunícalo lo antes posible. Si el pedido aún no ha sido procesado o enviado, podemos realizar cambios sin problema.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Cómo debo cuidar mis productos de bijouterie?</h2>
+                <p class="text-gray-600 mt-2">Para garantizar la durabilidad de tus joyas, te recomendamos no exponerlas a productos químicos, perfumes, ni humedad. Guarda tus piezas en un lugar seco y evita el contacto constante con el agua.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700">¿Tienen tienda física?</h2>
+                <p class="text-gray-600 mt-2">Actualmente no tenemos tienda física, pero puedes comprar todos nuestros productos en línea. Si necesitas asistencia, estamos disponibles para ayudarte a través de nuestro servicio de atención al cliente.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                <h2 class="text-xl font-semibold text-gray-700"> ¿Cómo puedo ponerme en contacto con ustedes?</h2>
+                <p class="text-gray-600 mt-2">Puedes contactarnos a través de nuestro correo electrónico [correo@bijouterie.com] o enviarnos un mensaje por nuestras redes sociales. Estamos aquí para ayudarte con cualquier pregunta que tengas.
+
+                    Estas preguntas y respuestas cubren aspectos comunes que los clientes suelen preguntar sobre productos, envíos, devoluciones, y más. Puedes personalizarlas según las necesidades y características específicas de tu tienda de bijouterie.</p>
+            </div>
+
+
+
+        </div>
+    </div>
+</main>
+
+
+
+<footer class="text-white text-center md:text-left mt-14">
+
+    <div class="flex flex-col bg-orange-300 p-6 space-y-6 md:w-full">
+    
+        <!-- Contenedor Principal -->
+        <div class="flex flex-col items-center md:flex-row md:justify-between md:items-start">
+            
+            
+                <p>© 2025 Lavalier</p>
+                <p>WhatsApp: 1133149388</p>
+                <p>Email: sarayamilagimenez99@gmail.com</p>
+
+    
+            <!-- Sección "¿Quiénes somos?" -->
+            <div class="text-center md:text-left">
+                <br>
+                <h2 class="font-bold mb-2 text-2xl text-white">¿Quiénes somos?</h2>
+                <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
+                    <li><a href="/about" class="hover:underline">Historia</a></li>
+                    <li><a href="/team" class="hover:underline">Nuestro equipo</a></li>
+                    <li><a href="/mission" class="hover:underline">Misión y visión</a></li>
+                </ul>
+            </div>
+    
+
+            <!-- Sección "Proyectos" -->
+            <div class="text-center md:text-left md:ml-24">
+                <br>
+                <h2 class="font-bold mb-2 text-2xl text-white">Proyectos</h2>
+                <ul class="space-y-2 text-lg md:text-2xl font-serif text-white">
+                    <li><a href="/Mitologias" class="hover:underline">Mitologías</a></li>
+                    <li><a href="/PDFhiru" class="hover:underline">PDFhiru</a></li>
+                    <li><a href="/Backend" class="hover:underline">Backend</a></li>
+                </ul>
+            </div>
+    
+            
+            <!-- Redes Sociales -->
+            <div class="flex justify-center gap-4 md:justify-end space-x-4">
+                <br>
+                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/instagram.svg" alt="Instagram">
+                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/tiktok.svg" alt="TikTok">
+                <img class="h-10 w-12 mt-6 md:mt-28" src="./public/Social_Network_Logos/twitter.svg" alt="Twitter">
+                <img class="h-10 w-12 mt-6 md:mt-28" src="/public/Social_Network_Logos/Whattsap.svg" alt="WhatsApp">
+            </div>
+    
+        </div>
+    </div>
+</footer>
